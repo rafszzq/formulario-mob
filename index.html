@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazenamento Temporário de Dados</title>
+    <link rel="styleSheet" href="styles.css">
+    
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <span class="titulo__pagina">Modelo de formulario de coleta de dados
+        </span>
+    </header>
+
+    <div class="conteudo">
+
+        <div class="formulario">
+            <form id="meuFormulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+        
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"><br><br>
+        
+                <button type="button" class="salvar" onclick="salvarDados()">Salvar</button>
+            </form>
+        </div>
+   
+        <div class="formulario">
+                <span>Este espaço está destinado a conter uma descrição completa do que este exemplo 
+                    pode fazer se for desenvvolvido adepois de horas de tentativas em uma noite sem  sono</span>
+                    também pode estar fora de um span  para funcionarou uma imgem,
+             
+        </div>
+    </div>
+    
+    <div class="lista">
+                <!-- Lista de Dados -->
+            <h1 class="titulo_lista">Coleção de Dados</h1>
+                <ul id="listaDados"></ul>
+    </div>
+            
+    <!-- Popup de confirmação -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button class="close" type="button" onclick="fecharPopup()">Fechar</button>
+            <p>Dados do formulário salvos temporariamente.</p>
+        </div>
+    </div>
+
+    <script src="javaScript/script.js"></script>
+</body>
+</html>
